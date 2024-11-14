@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Projects | My Portfolio">
+  <!-- Introductory Section -->
+  <section style="text-align: center; padding: 2rem; background-color: #f0f4f8; border-radius: 8px;">
+    <h2 style="font-size: 2rem; color: #023d65; margin-bottom: 1rem;">My Projects</h2>
+    <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+      Below are links to some of the work I have done as part of my UCD Frontend Devlopement Course - Take a look !
+    </p>
+  </section>
+
+  <!-- Project Cards Section -->
+  <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 2rem;">
+    <Card title="UCD Lecture Homework" 
+          description="Work I did as part of my Front End Development course with UCD" 
+          link="https://github.com/DearbhlaCunnion/ucd-frontend-web-dev" />
+    <Card title="My Astro Project" 
+          description="The first project I did with Astro" 
+          link="https://github.com/DearbhlaCunnion/astro-project" />
+    <Card title="My Portfolio" 
+          description="The code that made this website." 
+          link="https://github.com/DearbhlaCunnion/final-project" />
+  </section>
+
+</Layout>

@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About | My Portfolio">
+  <section style="text-align: center; max-width: 600px; margin: 2rem auto;">
+    <h2 style="font-size: 2rem; color: #023d65; margin-bottom: 1rem;">About Me</h2>
+    
+    <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1rem;">
+      I'm a <strong>Software Engineer</strong> based in <strong>Dublin, Ireland</strong>. I have experience in both frontend and backend development, with a special interest in all things <strong>frontend</strong>!
+    </p>
+    
+    <!-- Skills Section -->
+    <section style="background-color: #f5f5f5; padding: 2rem; border-radius: 8px; margin-top: 2rem;">
+      <h3 style="font-size: 1.5rem; color: #023d65; margin-bottom: 1rem;">My Skills</h3>
+      <ul style="display: flex; justify-content: space-around; list-style: none; padding: 0;">
+        <li>
+          <p>JavaScript</p>
+          <div style="background: #ddd; width: 100px; height: 8px; border-radius: 4px; overflow: hidden;">
+            <div style="width: 80%; height: 100%; background: #023d65;"></div>
+          </div>
+        </li>
+        <li>
+          <p>React</p>
+          <div style="background: #ddd; width: 100px; height: 8px; border-radius: 4px; overflow: hidden;">
+            <div style="width: 75%; height: 100%; background: #023d65;"></div>
+          </div>
+        </li>
+        <li>
+          <p>Node.js</p>
+          <div style="background: #ddd; width: 100px; height: 8px; border-radius: 4px; overflow: hidden;">
+            <div style="width: 70%; height: 100%; background: #023d65;"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    
+    <h3 style="font-size: 1.5rem; color: #023d65; margin-top: 2rem;">Interests</h3>
+    <div id="interests" style="display: flex; flex-direction: column; align-items: center; gap: 2rem; margin-top: 1rem;">
+      <div class="interest-item">
+        <img src="/images/betterCallSaul.png" alt="Better Call Saul" class="interest-image" style="width: 150px; border-radius: 8px;">
+        <p style="font-size: 1rem;">Better Call Saul</p>
+      </div>
+      <div class="interest-item" >
+        <img src="/images/Chelsea_FC.png" alt="Chelsea FC" class="interest-image" style="width: 150px; border-radius: 8px;">
+        <p style="font-size: 1rem;">Chelsea FC</p>
+      </div>
+      <div class="interest-item" >
+        <img src="/images/movies.png" alt="Movies" class="interest-image" style="width: 150px; border-radius: 8px;">
+        <p style="font-size: 1rem;">Movies</p>
+      </div>
+    </div>
+
+    <section style="padding: 2rem; text-align: center; margin-top: 2rem;">
+      <h3 style="font-size: 1.5rem; color: #023d65;">Want to Connect?</h3>
+      <a href="/contact" style="padding: 0.5rem 1rem; background-color: #023d65; color: white; border-radius: 5px; text-decoration: none;">
+        Contact Me
+      </a>
+    </section>
+  </section>
+</Layout>
