@@ -17,6 +17,22 @@
     text-decoration: none;
   }
 
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+    color: #7ed6df;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #7ed6df;
+  }
+  
+
 .interest-image {
     width: 150px;          
     height: auto;           
@@ -43,4 +59,22 @@
   h1, h2, h3 {
     color: #333;
   }
+  
+  .social-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .social-link img {
+    width: 20px;
+    margin-right: 0.5rem;
+  }
+
+  .social-link:hover {
+    color: #007acc; /* Light blue */
+  }
+  
   

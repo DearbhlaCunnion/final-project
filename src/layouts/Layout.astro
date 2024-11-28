@@ -13,13 +13,16 @@ const { title = "My Portfolio" } = Astro.props;
   <body>
     <div id="layout-wrapper">
       <header style="background-color: #023d65; padding: 1rem; color: #fff;">
-        <nav class="container" style="display: flex; gap: 1rem;">
-          <a href="/" style="color: white;">Home</a>
-          <a href="/final-project/about" style="color: white;">About</a>
-          <a href="/final-project/projects" style="color: white;">Projects</a>
-          <a href="/final-project/contact" style="color: white;">Contact</a>
+        <nav class="container" style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; gap: 1rem;">
+            <a href="/final-project" class="nav-link">Home</a>
+            <a href="/final-project/about" class="nav-link">About</a>
+            <a href="/final-project/projects" class="nav-link">Projects</a>
+            <a href="/final-project/contact" class="nav-link">Contact</a>
+          </div>
         </nav>
       </header>
+      
 
       <main id="main-content" class="container">
         <slot /> <!-- Page content will be injected here -->
@@ -27,6 +30,15 @@ const { title = "My Portfolio" } = Astro.props;
 
       <footer style="background-color: #333; color: #fff; padding: 1rem; text-align: center;">
         <p>&copy; {new Date().getFullYear()} Dearbhla Cunnion. All rights reserved.</p>
+        <p>
+          <a href="https://github.com/DearbhlaCunnion/" target="_blank" class="social-link">
+            <img src="/final-project/images/github-icon.png" alt="GitHub">GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/dearbhla-cunnion-4010271a3/" target="_blank" class="social-link">
+            <img src="/final-project/images/linkedin-icon.png" alt="LinkedIn">LinkedIn
+          </a>
+        </p>
+        
       </footer>
     </div>
   </body>
